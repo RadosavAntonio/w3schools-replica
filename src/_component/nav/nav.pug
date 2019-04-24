@@ -1,0 +1,19 @@
+-
+    let abcList = [
+        {
+            ok: '/html',
+            anotherWord: 'Learn HTML'
+        },
+        {
+            ok: '/css',
+            anotherWord: 'Learn CSS'
+        },
+        {
+            ok: '/javascript',
+            anotherWord: 'Learn JavaScript'
+        },
+    ]
+nav
+    h3 HTML and CSS
+    each abcAnyTHingElsE in abcList
+        a(href=abcAnyTHingElsE.ok)= abcAnyTHingElsE.anotherWord

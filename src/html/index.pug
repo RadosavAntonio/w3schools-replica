@@ -1,13 +1,14 @@
-extend _component/layout/template
+extend ../_component/layout/template
 
 block cool-config
     -
         var myTitle = 'Learning to code HTML, CSS and JavaScript!';
         var myDescription = 'This is a HTML replica of w3schools!';
-        var activeLink = '';
+        var landingPage = '';
+        var activeLink = 'html';
 
 block awesome-content
-    h1 This is a replica of w3schools.com
+    h1 This is a replica of w3schools.com!!!
     p I'll go through all possible HTML elements as well as CSS.
     h2 HTML
     p The language to build webpages. #[a(href="/html") Check it out!]

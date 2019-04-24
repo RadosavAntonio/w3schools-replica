@@ -1,0 +1,20 @@
+doctype html
+html
+
+    block cool-config
+
+    head
+        title=myTitle
+        meta(name="description", content=myDescription)
+        link(rel="stylesheet", href="/style.css")
+
+    body
+        div Print a variable #{activeLink}
+        include ../header/header
+
+        article
+            block awesome-content
+
+        include ../nav/nav
+
+        include ../footer/footer

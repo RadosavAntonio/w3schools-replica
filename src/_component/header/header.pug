@@ -1,0 +1,30 @@
+-
+    let abcListTop = [
+        {
+            ok: '',
+            anotherWord: 'Home'
+        },
+        {
+            ok: 'html',
+            anotherWord: 'HTML'
+        },
+        {
+            ok: 'css',
+            anotherWord: 'CSS'
+        },
+        {
+            ok: 'javascript',
+            anotherWord: 'JavaScript'
+        },
+    ]
+header
+    each abcAnyTHingElsE in abcListTop
+        //- if abcAnyTHingElsE.ok === activeLink
+        //-     a.current(href=`/${abcAnyTHingElsE.ok}`)= abcAnyTHingElsE.anotherWord
+        //- else
+        //-     a(href=`/${abcAnyTHingElsE.ok}`)= abcAnyTHingElsE.anotherWord
+        //- if [a is true] ? [do this] : [else do this]
+        a(
+            href=`/${abcAnyTHingElsE.ok}`
+            class=`${abcAnyTHingElsE.ok === activeLink ? 'current' : ''}`
+        )= abcAnyTHingElsE.anotherWord
