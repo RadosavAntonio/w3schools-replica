@@ -1,30 +1,28 @@
--
-    let abcListTop = [
-        {
-            ok: '',
-            anotherWord: 'Home'
-        },
-        {
-            ok: 'html',
-            anotherWord: 'HTML'
-        },
-        {
-            ok: 'css',
-            anotherWord: 'CSS'
-        },
-        {
-            ok: 'javascript',
-            anotherWord: 'JavaScript'
-        },
-    ]
+//- -
+//-     var topNav = [
+//-         {label: 'Home', link: '/'},
+//-         {label: 'HTML', link: '/html'},
+//-         {label: 'CSS', link: '/css'},
+//-         {label: 'JavaScript', link: '/javascript'},
+//-     ];
+
+
 header
-    each abcAnyTHingElsE in abcListTop
-        //- if abcAnyTHingElsE.ok === activeLink
-        //-     a.current(href=`/${abcAnyTHingElsE.ok}`)= abcAnyTHingElsE.anotherWord
-        //- else
-        //-     a(href=`/${abcAnyTHingElsE.ok}`)= abcAnyTHingElsE.anotherWord
-        //- if [a is true] ? [do this] : [else do this]
-        a(
-            href=`/${abcAnyTHingElsE.ok}`
-            class=`${abcAnyTHingElsE.ok === activeLink ? 'current' : ''}`
-        )= abcAnyTHingElsE.anotherWord
+    //- div=landingPage
+
+    a.current(href="/") Home
+    a(href="/html") HTML
+    a(href="/css") CSS
+    a(href="/javascript") JavaScript
+
+    //- each navigation in topNav
+    //-     if navigation.label == landingPage
+    //-         a.current(href='${baseUrl}${navigation.link}')=navigation.label
+    //-     else
+    //-         a(href='${baseUrl}${navigation.link}')=navigation.label
+
+    //- each navigation in topNav
+    //- if navigation.label == landingPage
+    //-     a.current(href=navigation.link)=navigation.label
+    //- else
+    //-     a(href=navigation.link)=navigation.label

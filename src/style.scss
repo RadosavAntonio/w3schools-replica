@@ -39,13 +39,14 @@ article{
     grid-row: 2/3;
 }
 
+header, 
+footer{
+    background-color: var(--color-scorpion)
+}
+
 footer{
     grid-column: 1/3;
     grid-row: 3/4;
-}
-
-header, footer{
-    background-color: var(--color-scorpion)
 }
 
 nav{
@@ -71,7 +72,8 @@ header{
 
 nav{
     padding-top: 20px;
-    h3, a{
+    h3, 
+    a{
         padding: 5px 12px;
     }
     a{
@@ -79,6 +81,10 @@ nav{
         text-decoration: none;
         display: inline-block;
         width: 100%;
+        &.current {
+            background-color: var(--color-fruit-salad);
+            color: var(--color-white);
+        }
         &:hover{
             background-color: var(--color-scorpion);
             color: var(--color-white);

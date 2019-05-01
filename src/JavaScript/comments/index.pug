@@ -1,0 +1,15 @@
+extend ../../_component/layout/template
+
+block cool-config
+    -
+        var myTitle = 'JavaScript comments!';
+        var myDescription = 'JavaScript comments can be used to explain JavaScript code, and to make it more readable.';
+        var landingPage = 'JavaScript';
+        var activeLink = '/javascript/comments';
+
+block awesome-content
+    h1=myTitle
+    p=myDescription
+    h3 Comments!?
+    p Single line comments start with //.
+    p Any text between // and the end of the line will be ignored by JavaScript (will not be executed).

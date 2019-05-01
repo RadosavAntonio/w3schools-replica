@@ -1,0 +1,15 @@
+extend ../../_component/layout/template
+
+block cool-config
+    -
+        var myTitle = 'HTML elements!';
+        var myDescription = 'An HTML element usually consists of a start tag and end tag.';
+        var landingPage = 'HTML';
+        var activeLink = '/html/elements';
+
+block awesome-content
+    h1=myTitle
+    p=myDescription
+    h3 Elements!?
+    p HTML elements can be nested (elements can contain elements).
+    p All HTML documents consist of nested HTML #[span(style="color:blue") elements].

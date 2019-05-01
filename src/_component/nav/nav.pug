@@ -1,19 +1,51 @@
--
-    let abcList = [
-        {
-            ok: '/html',
-            anotherWord: 'Learn HTML'
-        },
-        {
-            ok: '/css',
-            anotherWord: 'Learn CSS'
-        },
-        {
-            ok: '/javascript',
-            anotherWord: 'Learn JavaScript'
-        },
-    ]
+//- -
+//-     var sideNav = {
+//-         'Home': {
+//-             title: 'HTML and CSS',
+//-             linkLsit: [
+//-                 { label: 'Learn HTML', link: '/html'},
+//-                 { label: 'Learn CSS', link: '/css'},
+//-                 { label: 'Learn JavaScript', link: '/javascript'},
+//-             ]
+//-         },
+//-         'HTML': {
+//-             title: 'HTML Tutiorial',
+//-             linkLsit: [
+//-                 { label: 'HTML Elements', link: '/html/elements' },
+//-                 { label: 'HTML Attributes', link: '/html/attributes' },
+//-                 { label: 'HTML Headings', link: '/html/headings' },
+//-             ]
+//-         },
+//-         'CSS': {
+//-             title: 'CSS Tutorial',
+//-             linkLsit: [
+//-                 { label: 'CSS Colors', link: '/css/colors' },
+//-                 { label: 'CSS Backgrounds', link: '/css/backgrounds' },
+//-                 { label: 'CSS Borders', link: '/css/borders' },
+//-             ]
+//-         },
+//-         'JavaScript': {
+//-             title: 'JavaScript Tutorial',
+//-             linkLsit: [
+//-                 { label: 'JavaScript Comments', link: '/javascript/comments' },
+//-                 { label: 'JavaScript Variables', link: '/javascript/variables' },
+//-                 { label: 'JavaScaript Operators', link: '/javascript/operators' },
+//-             ]
+//-         },
+//-     };
+
 nav
-    h3 HTML and CSS
-    each abcAnyTHingElsE in abcList
-        a(href=abcAnyTHingElsE.ok)= abcAnyTHingElsE.anotherWord
+    //- h3=sideNav[landingPage].title
+
+    //- each navigation in sideNav[landingPage].linkList
+    //-     if navigation.link == activeLink
+    //-         a.current(href='${base}navigation.link)=navigation.label
+    //-     else
+    //-         a(href='${baseUrl}${navigation.link}')=navigation.label
+
+    a(href="/html") Learn HTML
+    a(href="/css") Learn CSS
+    a(href="/javascript") Learn JavaScript
+
+    //- div=landingPage
+    //- div=sideNav[landingPage].title
