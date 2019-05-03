@@ -10,5 +10,48 @@ block cool-config
 block awesome-content
     h1=myTitle
     p=myDescription
-    h3 Colors!?
+    h2 Colors
     p In HTML, a color can be specified by using a color name like Tomato, orange etc.
+
+    h3 #[span(style="color:red" ) HEX value]
+    p In HTML, a color can be specified using a hexadecimal value in the form: #rrggbb
+    p Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255)
+    p For example, #ff0000 is displayed as red, because red is set to its highest value (ff) and the others are set to the lowest value (00)
+
+    h3 Table
+    table(width="100%")
+        tr
+            td(bgcolor="orange", width="50%")
+            td orange
+        tr
+        tr
+            td(bgcolor="green", width="50%")
+            td green
+        tr
+        tr
+            td(bgcolor="red", width="50%")
+            td red
+        tr
+        tr
+            td(bgcolor="yellow", width="50%")
+            td yellow
+        tr
+        tr
+            td(bgcolor="blue", width="50%")
+            td blue
+        tr
+
+    h3 Box
+    div(style="background-color:orange")
+        p(style="color: white") Text
+    div(style="background-color:green")
+        p(style="color: white") Text
+    div(style="background-color:red")
+        p(style="color: white") Text
+    div(style="background-color:yellow")
+        p(style="color: black") Text
+    div(style="background-color:blue")
+        p(style="color: white") Text
+
+
+

@@ -22,6 +22,7 @@ body{
     grid-template-columns: 220px 1fr;
     grid-template-rows: 44px 1fr 44px;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url("paper.gif");
 }
 
 header{
@@ -135,3 +136,45 @@ h6{
     font-size: 16px;
 }
 
+// add
+
+a.salad{
+    color: var(--color-fruit-salad);
+}
+
+p.dotted{
+    border: dotted;
+    border-color: var(--color-fruit-salad);
+}
+p.dashed{
+    border: dashed;
+    border-color: var(--color-fruit-salad);
+}
+p.solid{
+    border: solid;
+    border-color: var(--color-fruit-salad);
+}
+p.double{
+    border: double;
+    border-color: var(--color-fruit-salad);
+}
+p.groove{
+    border: groove;
+    border-color: var(--color-fruit-salad);
+}
+p.ridge{
+    border: ridge;
+    border-color: var(--color-fruit-salad);
+}
+p.inset{
+    border: inset;
+    border-color: var(--color-fruit-salad);
+}
+p.outset{
+    border: outset;
+    border-color: var(--color-fruit-salad);
+}
+p.none{
+    border: none;
+    border-color: var(--color-fruit-salad);
+}
