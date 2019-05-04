@@ -38,7 +38,10 @@ nav
     h3=sideNav[landingPage].title
 
     each navigation in sideNav[landingPage].linkList
-        a(href=navigation.link)=navigation.label
+        if navigation.link == activeLink
+            a.current(href=`${baseUrl}${navigation.link}`)=navigation.label
+        else
+            a(href=`${baseUrl}${navigation.link}`)=navigation.label
 
     //- div=landingPage
     //- div=sideNav[landingPage].title

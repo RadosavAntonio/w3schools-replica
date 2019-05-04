@@ -1,11 +1,12 @@
 doctype html
 html
+    //- - var baseUrl = "http://localhost:3000"
     block cool-config
 
     head
         title=myTitle
         meta(name="description", content=myDescription)
-        link(rel="stylesheet", href="/style.css")
+        link(rel="stylesheet", href=`${baseUrl}/style.css`)
 
 
     body
